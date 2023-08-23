@@ -1,0 +1,25 @@
+{
+  "catantrumApp": {
+    "query": {
+      "home": {
+        "title": "Queries",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Query",
+        "createOrEditLabel": "Create or edit a Query",
+        "notFound": "No Queries found"
+      },
+      "created": "A new Query is created with identifier {{ param }}",
+      "updated": "A Query is updated with identifier {{ param }}",
+      "deleted": "A Query is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Query {{ id }}?"
+      },
+      "detail": {
+        "title": "Query"
+      },
+      "id": "ID",
+      "mechanic": "Mechanic",
+      "category": "Category"
+    }
+  }
+}

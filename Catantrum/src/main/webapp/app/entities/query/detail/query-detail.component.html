@@ -1,0 +1,36 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="query">
+      <h2 data-cy="queryDetailsHeading"><span jhiTranslate="catantrumApp.query.detail.title">Query</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ query.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="catantrumApp.query.mechanic">Mechanic</span></dt>
+        <dd>
+          <span>{{ query.mechanic }}</span>
+        </dd>
+        <dt><span jhiTranslate="catantrumApp.query.category">Category</span></dt>
+        <dd>
+          <span>{{ query.category }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/query', query.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

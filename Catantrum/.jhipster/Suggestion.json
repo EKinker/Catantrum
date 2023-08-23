@@ -1,0 +1,20 @@
+{
+  "applications": ["catantrum"],
+  "changelogDate": "20230823143021",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "suggestion",
+  "fields": [
+    {
+      "fieldName": "result",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Suggestion",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

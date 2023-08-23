@@ -1,0 +1,44 @@
+{
+  "applications": ["catantrum"],
+  "changelogDate": "20230823143017",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "game",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "minPlayers",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "maxPlayers",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "minAge",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "category",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "userRating",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "mechanic",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Game",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

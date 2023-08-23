@@ -10,7 +10,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Catantrum</name>
-    <description>Description for Catantrum</description>
+    <description>Description for catantrum</description>
 
     <repositories>
         <!-- jhipster-needle-maven-repository -->
@@ -813,7 +813,7 @@
                                         <include>package.json</include>
                                         <include>webpack/*.*</include>
                                         <include>tsconfig.json</include>
-                                        <include>.postcss.config.js</include>
+                                        <include>tsconfig.app.json</include>
                                     </includes>
                                     <excludes>
                                         <exclude>**/app/**/service-worker.js</exclude>
@@ -972,7 +972,7 @@
                                 <driver>org.h2.Driver</driver>
                                 <url>jdbc:h2:file:${project.build.directory}/h2db/db/catantrum</url>
                                 <defaultSchemaName></defaultSchemaName>
-                                <username>Catantrum</username>
+                                <username>catantrum</username>
                                 <password></password>
                                 <referenceUrl>hibernate:spring:rocks.zipcode.domain?dialect=org.hibernate.dialect.H2Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
                                 <verbose>true</verbose>
@@ -1069,8 +1069,8 @@
                                 <changeLogFile>${project.basedir}/src/main/resources/config/liquibase/master.xml</changeLogFile>
                                 <diffChangeLogFile>${project.basedir}/src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
                                 <driver>com.mysql.cj.jdbc.Driver</driver>
-                                <url>jdbc:mysql://localhost:3306/Catantrum</url>
-                                <defaultSchemaName>Catantrum</defaultSchemaName>
+                                <url>jdbc:mysql://localhost:3306/catantrum</url>
+                                <defaultSchemaName>catantrum</defaultSchemaName>
                                 <username>root</username>
                                 <password></password>
                                 <referenceUrl>hibernate:spring:rocks.zipcode.domain?dialect=org.hibernate.dialect.MySQL8Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>

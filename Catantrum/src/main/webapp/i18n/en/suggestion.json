@@ -1,0 +1,24 @@
+{
+  "catantrumApp": {
+    "suggestion": {
+      "home": {
+        "title": "Suggestions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Suggestion",
+        "createOrEditLabel": "Create or edit a Suggestion",
+        "notFound": "No Suggestions found"
+      },
+      "created": "A new Suggestion is created with identifier {{ param }}",
+      "updated": "A Suggestion is updated with identifier {{ param }}",
+      "deleted": "A Suggestion is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Suggestion {{ id }}?"
+      },
+      "detail": {
+        "title": "Suggestion"
+      },
+      "id": "ID",
+      "result": "Result"
+    }
+  }
+}

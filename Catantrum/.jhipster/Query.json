@@ -1,0 +1,24 @@
+{
+  "applications": ["catantrum"],
+  "changelogDate": "20230823143020",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "query",
+  "fields": [
+    {
+      "fieldName": "mechanic",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "category",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Query",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

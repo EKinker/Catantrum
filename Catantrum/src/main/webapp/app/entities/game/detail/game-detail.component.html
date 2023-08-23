@@ -1,0 +1,56 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="game">
+      <h2 data-cy="gameDetailsHeading"><span jhiTranslate="catantrumApp.game.detail.title">Game</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ game.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="catantrumApp.game.name">Name</span></dt>
+        <dd>
+          <span>{{ game.name }}</span>
+        </dd>
+        <dt><span jhiTranslate="catantrumApp.game.minPlayers">Min Players</span></dt>
+        <dd>
+          <span>{{ game.minPlayers }}</span>
+        </dd>
+        <dt><span jhiTranslate="catantrumApp.game.maxPlayers">Max Players</span></dt>
+        <dd>
+          <span>{{ game.maxPlayers }}</span>
+        </dd>
+        <dt><span jhiTranslate="catantrumApp.game.minAge">Min Age</span></dt>
+        <dd>
+          <span>{{ game.minAge }}</span>
+        </dd>
+        <dt><span jhiTranslate="catantrumApp.game.category">Category</span></dt>
+        <dd>
+          <span>{{ game.category }}</span>
+        </dd>
+        <dt><span jhiTranslate="catantrumApp.game.userRating">User Rating</span></dt>
+        <dd>
+          <span>{{ game.userRating }}</span>
+        </dd>
+        <dt><span jhiTranslate="catantrumApp.game.mechanic">Mechanic</span></dt>
+        <dd>
+          <span>{{ game.mechanic }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/game', game.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

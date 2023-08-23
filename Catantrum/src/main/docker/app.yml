@@ -17,7 +17,7 @@ services:
   catantrum-mysql:
     image: mysql:8.0.30
     # volumes:
-    #   - ~/volumes/jhipster/Catantrum/mysql/:/var/lib/mysql/
+    #   - ~/volumes/jhipster/catantrum/mysql/:/var/lib/mysql/
     volumes:
       - ./config/mysql:/etc/mysql/conf.d
     environment:

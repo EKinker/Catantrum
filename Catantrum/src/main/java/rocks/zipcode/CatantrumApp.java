@@ -32,7 +32,7 @@ public class CatantrumApp {
     }
 
     /**
-     * Initializes Catantrum.
+     * Initializes catantrum.
      * <p>
      * Spring profiles can be configured with a program argument --spring.profiles.active=your-active-profile
      * <p>

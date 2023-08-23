@@ -1,0 +1,53 @@
+
+application {
+  config {
+    baseName catantrum,
+    packageName rocks.zipcode,
+    applicationType monolith,
+    prodDatabaseType mysql
+  }
+  entities *
+}
+
+entity Game {
+	name String
+    minPlayers Integer
+    maxPlayers Integer
+    minAge Integer
+    category String
+    userRating Integer
+    mechanic String
+      
+}
+
+entity Category{
+	name String
+}
+
+entity Mechanic{
+	name String
+}
+
+entity Query{
+	mechanic String
+    category String
+}
+
+entity Suggestion{
+	result String
+}
+
+//relationship ManyToMany{
+//	Game to Category
+  //  Game to Mechanic
+    //Game to Suggestion
+    
+//}
+
+//relationship OneToMany{
+//	Query to Suggestion
+//    Category to Query
+//    Mechanic to Query
+//}
+
+

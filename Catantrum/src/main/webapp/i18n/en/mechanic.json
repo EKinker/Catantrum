@@ -1,0 +1,24 @@
+{
+  "catantrumApp": {
+    "mechanic": {
+      "home": {
+        "title": "Mechanics",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Mechanic",
+        "createOrEditLabel": "Create or edit a Mechanic",
+        "notFound": "No Mechanics found"
+      },
+      "created": "A new Mechanic is created with identifier {{ param }}",
+      "updated": "A Mechanic is updated with identifier {{ param }}",
+      "deleted": "A Mechanic is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Mechanic {{ id }}?"
+      },
+      "detail": {
+        "title": "Mechanic"
+      },
+      "id": "ID",
+      "name": "Name"
+    }
+  }
+}
