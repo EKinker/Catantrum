@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Game.
+    -->
+    <changeSet id="20230823143017-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="game_id"
+                                 baseTableName="rel_game__category"
+                                 constraintName="fk_rel_game__category__game_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="game"/>
+
+        <addForeignKeyConstraint baseColumnNames="category_id"
+                                 baseTableName="rel_game__category"
+                                 constraintName="fk_rel_game__category__category_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="category"/>
+
+        <addForeignKeyConstraint baseColumnNames="game_id"
+                                 baseTableName="rel_game__mechanic"
+                                 constraintName="fk_rel_game__mechanic__game_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="game"/>
+
+        <addForeignKeyConstraint baseColumnNames="mechanic_id"
+                                 baseTableName="rel_game__mechanic"
+                                 constraintName="fk_rel_game__mechanic__mechanic_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="mechanic"/>
+    </changeSet>
+</databaseChangeLog>
