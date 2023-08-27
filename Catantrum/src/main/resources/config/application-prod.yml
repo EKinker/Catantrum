@@ -34,8 +34,8 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:mysql://localhost:3306/catantrum
-    username: Liz
-    password: liz1123
+    username: root
+    password:
     hikari:
       poolName: Hikari
       auto-commit: false
