@@ -5,7 +5,7 @@ body {
     max-width: 50rem;
     padding: 2rem;
     margin: auto;
-    background: #fafafa;
+    background: #add8e6;
 }
 
 img {
@@ -19,5 +19,5 @@ a {
 h1,
 h2,
 strong {
-    color: #0fab04;
+    color: #00008b;
 }

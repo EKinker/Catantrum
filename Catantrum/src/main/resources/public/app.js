@@ -68,9 +68,9 @@ function showGameList(data) {
         let body = document.createElement('p');
         let by = document.createElement('p');
         title.innerHTML = `<a href="/gamedetail.html?id=${post.id}">${post.name}</a>`;
-        body.innerHTML = `${post.category}`;
+        body.innerHTML = `Rating: ${post.userRating}`;
         //let postedTime = dateOf(post.time)
-        by.innerHTML = `${post.minPlayers} - ${post.maxPlayers}`;
+        by.innerHTML = `${post.minPlayers} - ${post.maxPlayers} Players`;
 
         li.appendChild(title);
         li.appendChild(body);
@@ -95,9 +95,10 @@ function showGameDetail(post) {
     let body = document.createElement('p');
     let by = document.createElement('p');
     title.innerHTML = `${post.name}`;
-    body.innerHTML = `${post.category}`;
+    body.innerHTML = `Play Style: ${post.category}<br> Game Type: ${post.mechanic}`;
     //let postedTime = dateOf(post.time)
-    by.innerHTML = `${post.minPlayers} - ${post.maxPlayers}`;
+
+    by.innerHTML = `${post.minPlayers} - ${post.maxPlayers} Players<br>Min Age: ${post.minAge}+`;
 
     li.appendChild(title);
     li.appendChild(body);
